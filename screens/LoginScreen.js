@@ -9,14 +9,12 @@ const LoginScreen = () => {
   const navigation = useNavigation()
 
   const permision = () => {
-    trueTerm
-      ? navigation.navigate('Home')
-      : alert('You must accept the terms and conditions')
+    navigation.navigate('Home')
   }
   return (
     <View className='flex-1 items-center justify-center space-y-3'>
       <View className='absolute top-52 space-y-3'>
-        <Text className='text-center text-xl font-extralight'>Bienbenid@</Text>
+        <Text className='text-center text-xl font-extralight'>Bienvenid@</Text>
         <Text className=' text-center text-3xl font-bold text-red-500'>
           K-<Text className='text-gray-800'>NOW</Text>
         </Text>
@@ -41,7 +39,7 @@ const LoginScreen = () => {
           className='bg-blue-500 py-2 w-56 rounded-lg'
         >
           <Text className='text-white font-bold text-lg text-center'>
-            Faceboock
+            Facebook
           </Text>
         </TouchableOpacity>
       </View>

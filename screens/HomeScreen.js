@@ -29,7 +29,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 50,
     descripction:
-      ' Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
+      '1 Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
     date: '2022-11-11'
   },
   {
@@ -40,7 +40,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 45,
     descripction:
-      'La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
+      '2 La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
     date: '2022-11-20'
   },
   {
@@ -51,7 +51,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 50,
     descripction:
-      ' Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
+      '3 Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
     date: '2022-11-11'
   },
   {
@@ -62,7 +62,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 45,
     descripction:
-      'La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
+      '4 La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
     date: '2022-11-20'
   },
   {
@@ -73,7 +73,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 50,
     descripction:
-      ' Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
+      '5 Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
     date: '2022-11-11'
   },
   {
@@ -84,7 +84,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 45,
     descripction:
-      'La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
+      '6 La mejor tecno banda en vivo aparten lugar rapido porque se agotan los boletos',
     date: '2022-11-20'
   },
   {
@@ -95,7 +95,7 @@ const DUMMY_DATA = [
     ticketsMax: 100,
     ticketsSold: 50,
     descripction:
-      ' Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
+      '7 Batallas de Rap en vivo en el centro de la ciudad de Mexico mejor evento de rap en vivo',
     date: '2022-11-11'
   }
 ]
@@ -145,9 +145,9 @@ const HomeScreen = () => {
               date={card.date}
             />
           )}
-          stackSize={5}
-          animateCardOpacity
-          horizontalSwipe={false}
+          stackSize={3}
+          goBackToPreviousCardOnSwipeLeft={true}
+          disableRightSwipe={true}
         ></Swiper>
       </View>
       {/* End of Cards */}

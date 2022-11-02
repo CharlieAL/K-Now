@@ -4,8 +4,8 @@ import { MapIcon, MapPinIcon, UserIcon } from 'react-native-heroicons/solid'
 
 const Cards = ({ img, description, sold, max, name, date }) => {
   return (
-    <View className='-mt-5 '>
-      <View className=''>
+    <View className='-m-3 -mt-5'>
+      <View>
         <Image
           source={{
             uri: img
@@ -13,7 +13,7 @@ const Cards = ({ img, description, sold, max, name, date }) => {
           className='w-full h-[500px] rounded-t-xl object-cover '
         />
       </View>
-      <View className='bg-gray-100 shadow-lg rounded-b-xl'>
+      <View className='bg-gray-100 shadow-lg rounded-b-xl h-44'>
         <View className='flex-row items-center p-3  justify-between'>
           <TouchableOpacity className='flex-row items-center'>
             <UserIcon color={'green'} />
