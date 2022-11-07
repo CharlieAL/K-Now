@@ -1,14 +1,7 @@
 import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import {
-  ArrowDownCircleIcon,
-  ArrowDownLeftIcon,
-  ArrowLeftCircleIcon,
-  ArrowLeftIcon,
-  BackwardIcon,
-  UserPlusIcon
-} from 'react-native-heroicons/solid'
+import { ArrowLeftCircleIcon, UserPlusIcon } from 'react-native-heroicons/solid'
 import Chats from '../components/ListChats'
 
 const ChatScreen = () => {
